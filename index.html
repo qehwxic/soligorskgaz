@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПУ «Солигорскгаз» — филиал УП «МИНСКОБЛГАЗ»</title>
+<meta name="description" content="Производственное управление «Солигорскгаз» — газоснабжение и газификация города Солигорска и Солигорского района. Аварийная служба 104, оплата через ЕРИП.">
+<link rel="stylesheet" href="soligorskgaz.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-flame" viewBox="0 0 24 30">
+    <path d="M12 1C12 1 4 9 4 17a8 8 0 0 0 16 0c0-3-1.5-5.5-3-7-.5 2-1.5 3-3 3.5C14 10 12 1 12 1Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24">
+    <path d="M12 2 1 21h22L12 2Zm0 6 7.5 12h-15L12 8Zm-1 4v4h2v-4h-2Zm0 5v2h2v-2h-2Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24">
+    <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24">
+    <path d="M21.7 18.3 14 10.6A6.5 6.5 0 0 0 5 3.3L9 7.3 7.3 9 3.3 5a6.5 6.5 0 0 0 7.3 9l7.7 7.7a2 2 0 0 0 2.8 0l1.6-1.6a2 2 0 0 0 0-2.8Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-pipe" viewBox="0 0 24 24">
+    <path d="M2 6v6h4v-2h8v4H8a2 2 0 0 0-2 2v2h12v-2a2 2 0 0 0-2-2h2v-8H6V4H2v2Zm2 10v2h2v-2H4Zm14 0v2h2v-2h-2Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24">
+    <path d="M13 2 3 14h7l-1 8 11-13h-7l0-7Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-fuel" viewBox="0 0 24 24">
+    <path d="M5 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm1 3v5h6V5H6Zm12 4 2 2v7a1.5 1.5 0 0 1-3 0v-4h-1v7h6V9l-4-4v4Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24">
+    <path d="M6 2h9l5 5v15H6V2Zm8 1.5V8h4.5L14 3.5ZM8 12h8v1.5H8V12Zm0 4h8v1.5H8V16Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24">
+    <path d="M12 2 2 8v2h20V8L12 2ZM4 11v7H2v2h20v-2h-2v-7h-3v7h-3v-7h-4v7H7v-7H4Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24">
+    <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1l-2.22 2.2Z" fill="currentColor"/>
+  </symbol>
+</svg>
+<div class="emergency">
+  <div class="emergency-inner">
+    Запах газа? Аварийная служба — круглосуточно:
+    <strong>104</strong> &nbsp;|&nbsp;
+    <a href="tel:+375174249133">8 (0174) 24-91-33</a>
+  </div>
+</div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">
+      <svg class="flame" viewBox="0 0 24 30" fill="none"><path d="M12 1C12 1 4 9 4 17a8 8 0 0 0 16 0c0-3-1.5-5.5-3-7-.5 2-1.5 3-3 3.5C14 10 12 1 12 1Z" fill="#f5820b"/><path d="M12 30a5 5 0 0 1-5-5c0-2.5 2-4 3.5-5.5C11 18 12 16 12 16s1 2 1.5 3.5C15 21 17 22.5 17 25a5 5 0 0 1-5 5Z" fill="#ffd9a8"/></svg>
+      <span><b>ПУ «Солигорскгаз»</b><span>филиал УП «МИНСКОБЛГАЗ»</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Меню">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#about">О предприятии</a>
+      <a href="#history">История</a>
+      <a href="#services">Услуги</a>
+      <a href="#payment">Оплата</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="container">
+    <h1>Газоснабжение <em>Солигорска</em> и Солигорского района</h1>
+    <p>Производственное управление «Солигорскгаз» — надёжное газовое хозяйство с почти 70-летней историей. Газификация, техническое обслуживание, аварийная служба — круглосуточно.</p>
+    <a class="btn" href="#contacts">Связаться с нами</a>
+    <a class="btn ghost" href="tel:104">Аварийная служба 104</a>
+    <div class="hero-badges">
+      <div class="badge"><div class="num">1958</div><div class="lbl">год начала газификации</div></div>
+      <div class="badge"><div class="num">363</div><div class="lbl">работника в штате</div></div>
+      <div class="badge"><div class="num">24/7</div><div class="lbl">аварийно-диспетчерская служба</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <h2 class="sec-title">О предприятии</h2>
+    <p class="sec-sub">ПУ «Солигорскгаз» — филиал УП «МИНСКОБЛГАЗ», обеспечивающий газоснабжение и эксплуатацию газового хозяйства города Солигорска и Солигорского района.</p>
+    <div class="about-grid">
+      <div>
+        <p>«Солигорскгаз» сегодня — это большое, разветвлённое и технически хорошо оснащённое газовое хозяйство. Предприятие обслуживает жилой фонд, предприятия и организации района, включая крупнейших потребителей природного газа.</p>
+        <p>В структуру управления входят службы внутридомового газового оборудования, подземных газопроводов, аварийная служба и службы газоснабжения Любанского, Стародорожского и Копыльского районов.</p>
+        <p>Штат предприятия — 363 работника, в том числе 58 человек молодёжи. Коллектив обеспечивает бесперебойное и безопасное газоснабжение потребителей круглый год.</p>
+      </div>
+      <div class="facts">
+        <h3>ПУ «Солигорскгаз» в цифрах</h3>
+        <ul>
+          <li>Работников <b>363</b></li>
+          <li>Из них молодёжь <b>58</b></li>
+          <li>Газификация с <b>1958 года</b></li>
+          <li>Природный газ с <b>1993 года</b></li>
+          <li>Аварийная служба <b>круглосуточно</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="history">
+  <div class="container">
+    <h2 class="sec-title">История предприятия</h2>
+    <p class="sec-sub">Путь от мастерского участка из 6 человек до современного производственного управления.</p>
+    <div class="timeline">
+      <div class="tl-item"><div class="yr">1958–1966</div><p>Газификацию города и района осуществлял мастерский участок Слуцкой конторы по газификации — всего 6 человек и один автомобиль. Начало газификации — с посёлка «Шанхай», первые газобаллонные установки.</p></div>
+      <div class="tl-item"><div class="yr">1966</div><p>Мастерский участок преобразован в Солигорскую эксплуатационно-монтажную контору (ЭМК): 19 работников, уровень газификации 28,7%. Созданы аварийная служба и службы обслуживания газового оборудования.</p></div>
+      <div class="tl-item"><div class="yr">1975</div><p>Приказом от 31 июля Солигорская ЭМК преобразована в «Солигорскгаз» — межрайонное производственное управление газового хозяйства. Уровень газификации достиг 53,4%.</p></div>
+      <div class="tl-item"><div class="yr">1993</div><p>Введена в эксплуатацию ГРС № 41 в районе деревни Дубеи — начало газификации Солигорска и района природным газом. Первый потребитель — РУП ПО «Беларуськалий».</p></div>
+      <div class="tl-item"><div class="yr">1996</div><p>Жилой фонд города Солигорска (27 713 квартир) переведён со сжиженного на природный газ.</p></div>
+      <div class="tl-item"><div class="yr">2005</div><p>Введена в действие первая в Солигорске и районе автомобильная газозаправочная станция.</p></div>
+      <div class="tl-item"><div class="yr">Сегодня</div><p>Крупное, технически оснащённое газовое хозяйство с численностью 363 работника, обслуживающее десятки тысяч потребителей.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="sec-title">Направления деятельности</h2>
+    <p class="sec-sub">Полный цикл работ с газовым оборудованием — от проектирования до аварийного реагирования.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C12 2 5 9 5 15a7 7 0 0 0 14 0c0-2.5-1.2-4.6-2.4-6-.4 1.7-1.3 2.6-2.6 3 .6-3.7-.2-9-2-10Z"/></svg></div>
+        <h3>Газоснабжение</h3>
+        <p>Бесперебойная подача природного и сжиженного газа жилому фонду, предприятиям и организациям Солигорского района.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7Z"/></svg></div>
+        <h3>Техническое обслуживание</h3>
+        <p>Профилактическое обслуживание внутридомового газового оборудования, газопроводов и групповых резервуарных установок.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"/><path d="M4 18v-4a8 8 0 0 1 16 0v4"/><path d="M9 10v3M15 10v3"/></svg></div>
+        <h3>Строительно-монтажные работы</h3>
+        <p>Газификация квартир и индивидуальных жилых домов, монтаж и замена газового оборудования.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></div>
+        <h3>Аварийная служба</h3>
+        <p>Аварийно-диспетчерская служба работает круглосуточно, без выходных. Единый номер — 104.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v15"/><path d="M3 21h14"/><path d="M15 9h3a2 2 0 0 1 2 2v4"/><path d="M18 15h.01"/><path d="M8 8h3M8 12h3"/></svg></div>
+        <h3>Газозаправочная станция</h3>
+        <p>Автомобильная газозаправочная станция — заправка автомобилей сжиженным газом с 2005 года.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4a2 2 0 0 1 6 0"/><path d="M9 10h6M9 14h6M9 18h4"/></svg></div>
+        <h3>Прочие услуги</h3>
+        <p>Выезд специалистов, консультации, заключение договоров на техническое обслуживание.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="payment">
+  <div class="container">
+    <h2 class="sec-title">Оплата услуг</h2>
+    <p class="sec-sub">Оплатить услуги газоснабжения и обслуживания можно через систему «Расчёт» (ЕРИП) — в любом удобном месте и в удобное время.</p>
+    <div class="pay-grid">
+      <div>
+        <div class="pay-note">
+    <span class="ico"><svg><use href="#i-alert"/></svg></span>
+    Оплату необходимо производить <b>до 25 числа месяца</b>...
+    </div>
+        <ol class="steps">
+          <li>Зайдите в систему ЕРИП: <b>Коммунальные платежи → Газоснабжение → Минская область</b> → выберите город и район → наименование филиала.</li>
+          <li>Выберите код услуги: <b>природный газ</b>, <b>сжиженный газ</b>, <b>прочие работы и услуги</b> или <b>строительно-монтажные работы</b>.</li>
+          <li>Нажмите «Далее», введите <b>номер лицевого счёта</b> и сумму платежа (если не указана).</li>
+          <li>Проверьте корректность информации и нажмите «Далее».</li>
+          <li>Совершите платёж. При оплате в кассе банка сообщите кассиру о необходимости проведения платежа через систему «Расчёт» (ЕРИП).</li>
+        </ol>
+      </div>
+      <div class="erip-box">
+        <h3>Путь платежа в ЕРИП</h3>
+        <p>Платить можно наличными, электронными деньгами и банковскими картами — в интернет-банке, мобильном банкинге, инфокиоске, кассе банка, банкомате и т.д.</p>
+        <div class="erip-path">
+          ЕРИП → <b>Коммунальные платежи</b> → <b>Газоснабжение</b> → Минская область → Солигорский р-н → Солигорскгаз
+        </div>
+        <div class="erip-codes">
+          Коды услуг:
+          <span>природный газ</span>
+          <span>сжиженный газ</span>
+          <span>прочие работы и услуги</span>
+          <span>строительно-монтажные работы</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <h2 class="sec-title">Контакты</h2>
+    <p class="sec-sub">Мы всегда на связи. Приезжайте, звоните, пишите.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="c-card">
+          <h3>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            Реквизиты и адрес
+          </h3>
+          <div class="c-row"><span class="k">Адрес</span><span>223710, г. Солигорск, ул. Строителей, д. 2</span></div>
+          <div class="c-row"><span class="k">Приёмная</span><a href="tel:+375174249140">8 (0174) 24-91-40</a></div>
+          <div class="c-row"><span class="k">Факс</span><span>8 (0174) 24-91-41</span></div>
+          <div class="c-row"><span class="k">E-mail</span><a href="mailto:info@mx.mog.by">info@mx.mog.by</a></div>
+          <div class="c-row"><span class="k">Режим работы</span><span>пн–чт: 8:00–17:00<br>пт: 8:00–15:45<br>обед: 12:00–12:45</span></div>
+        </div>
+        <div class="c-card">
+          <h3>
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11H3z"/><path d="M3 9l2-4h14l2 4"/><path d="M10 13h4"/></svg></span>
+            Банковские реквизиты
+          </h3>
+          <div class="c-row"><span class="k">Расчётный счёт</span><span>BY80AKBB30120130400116600000</span></div>
+          <div class="c-row"><span class="k">БИК</span><span>AKBBBY2X</span></div>
+          <div class="c-row"><span class="k">Банк</span><span>ЦБУ № 633 ОАО «АСБ Беларусбанк», г. Солигорск, ул. Козлова, 23а</span></div>
+        </div>
+      </div>
+      <div class="c-hotline">
+        <div class="hotline-row">
+          <svg class="hotline-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          <div class="hotline-num">104</div>
+          <div class="hotline-txt">
+            <b>Аварийно-диспетчерская служба</b>
+            <span>Круглосуточно, без выходных</span>
+            <span>Горячая линия: <a href="tel:+375174249133">8 (0174) 24-91-33</a></span>
+          </div>
+          <a class="btn-sm" href="tel:104">Позвонить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>© <span id="yr"></span> ПУ «Солигорскгаз» — филиал УП «МИНСКОБЛГАЗ»</span>
+    <span>г. Солигорск, ул. Строителей, д. 2 · Аварийная служба: 104</span>
+  </div>
+</footer>
+
+<script src="soligorskgaz.js"></script>
+</body>
+</html>
